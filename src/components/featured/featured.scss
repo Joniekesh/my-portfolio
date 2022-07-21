@@ -1,0 +1,123 @@
+@import "../../global.scss";
+
+.featured {
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	align-items: center;
+	justify-content: center;
+	padding: 0px 30px 30px 30px;
+	position: relative;
+
+	.featuredContainer {
+		display: flex;
+		flex-direction: column;
+		z-index: 2;
+
+		.featuredLogo {
+			margin: 8px;
+			color: $mainColor;
+			overflow: hidden;
+		}
+
+		.line {
+			display: flex;
+			align-items: flex-start;
+			height: 8px;
+			width: 35px;
+			background-color: crimson;
+			font-weight: bold;
+			border-radius: 60px;
+		}
+	}
+
+	.container {
+		display: flex;
+		width: 100%;
+
+		.featuredLeft {
+			width: 50%;
+			z-index: 1;
+
+			@include mobile {
+				width: 100%;
+			}
+
+			.featuredItems {
+				margin-bottom: 16px;
+
+				.title {
+					color: $mainColor;
+				}
+
+				.projectTitle {
+					font-size: 30px;
+					margin-bottom: 50px;
+
+					@include mobile {
+						font-size: 20px;
+						margin-bottom: 20px;
+					}
+				}
+
+				.featuredText {
+					line-height: 1.8;
+					font-size: 20px;
+
+					@include mobile {
+						font-size: 16px;
+						width: 95%;
+						height: 100%;
+					}
+				}
+
+				@include mobile {
+					text-align: center;
+				}
+			}
+		}
+
+		.featuredRight {
+			width: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			z-index: 2;
+
+			@include mobile {
+				width: 100%;
+			}
+
+			img {
+				height: 100%;
+				width: 90%;
+				object-fit: cover;
+				border-radius: 8px;
+
+				@include mobile {
+					width: 100%;
+				}
+			}
+		}
+
+		@include mobile {
+			flex-direction: column;
+		}
+	}
+
+	@include mobile {
+		flex-direction: column;
+		padding: 10px;
+	}
+
+	span {
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 300px;
+		width: 300px;
+		border-radius: 50%;
+		background-color: rgb(222, 222, 230);
+	}
+}

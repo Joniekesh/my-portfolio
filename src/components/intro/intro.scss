@@ -1,0 +1,124 @@
+@import "../../global.scss";
+
+.intro {
+	background-color: white;
+	display: flex;
+
+	@include mobile {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.introLeft {
+		flex: 1;
+		overflow: hidden;
+
+		.imageContainer {
+			width: 700px;
+			height: 700px;
+			border-radius: 50%;
+			background-color: crimson;
+			display: flex;
+			align-items: flex-end;
+			justify-content: center;
+			float: right;
+
+			@include mobile {
+				align-items: flex-start;
+			}
+
+			img {
+				height: 95%;
+				border-radius: 50%;
+
+				@include mobile {
+					height: 50%;
+				}
+			}
+		}
+	}
+
+	.introRight {
+		flex: 1;
+
+		.wrapper {
+			width: 100%;
+			height: 100%;
+			padding-left: 50px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+
+			@include mobile {
+				padding-left: 0;
+				align-items: center;
+			}
+
+			a {
+				left: 40%;
+				font-size: 30px;
+				font-weight: 500;
+				margin-top: 20px;
+				color: crimson;
+
+				i {
+					animation: arrow 2s infinite;
+				}
+
+				@keyframes arrow {
+					100% {
+						opacity: 0;
+					}
+				}
+			}
+
+			h1 {
+				font-size: 60px;
+
+				@include mobile {
+					font-size: 40px;
+				}
+			}
+			h2 {
+				font-size: 35px;
+
+				@include mobile {
+					font-size: 28px;
+				}
+			}
+			h3 {
+				font-size: 30px;
+				display: flex;
+				align-items: center;
+
+				@include mobile {
+					font-size: 22px;
+				}
+
+				p {
+					color: $mainColor;
+					margin-right: 5px;
+					font-size: inherit;
+				}
+
+				span {
+					font-size: inherit;
+					color: crimson;
+				}
+
+				.ityped-cursor {
+					animation: blink 1s infinite;
+				}
+
+				@keyframes blink {
+					50% {
+						opacity: 1;
+					}
+					100% {
+						opacity: 0;
+					}
+				}
+			}
+		}
+	}
+}

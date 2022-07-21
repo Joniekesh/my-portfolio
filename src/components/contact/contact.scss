@@ -1,0 +1,168 @@
+@import "../../global.scss";
+
+.contact {
+	background-color: rgb(0, 21, 27);
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100vw;
+	padding: 0px 30px;
+
+	@include mobile {
+		padding: 10px;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.titleContainer {
+		display: flex;
+		text-align: center;
+		flex-direction: column;
+		width: 150px;
+
+		.title {
+			text-align: center;
+			margin: 10px;
+			overflow: hidden;
+
+			@include mobile {
+				margin: 0px;
+				height: 50px;
+				height: 24px;
+			}
+		}
+
+		.line {
+			display: flex;
+			align-items: flex-start;
+			height: 8px;
+			width: 35px;
+			background-color: crimson;
+			font-weight: bold;
+			border-radius: 60px;
+		}
+	}
+
+	.contactWrapper {
+		width: 100%;
+		display: flex;
+		align-items: center;
+
+		@include mobile {
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: flex-start;
+		}
+
+		.contactLeft {
+			width: 50%;
+			padding: 10px;
+
+			@include mobile {
+				width: 100%;
+			}
+
+			form {
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+				overflow: hidden;
+
+				@include mobile {
+					width: 90%;
+				}
+
+				.formGroup {
+					display: flex;
+					flex-direction: column;
+					margin: 8px;
+
+					@include mobile {
+						margin: 2px;
+					}
+
+					label {
+						font-size: 18px;
+					}
+
+					input {
+						padding: 10px 3px;
+						font-size: 16px;
+						outline: none;
+						color: black;
+						&:focus {
+							outline: none;
+						}
+
+						@include mobile {
+							padding: 7px 3px;
+						}
+					}
+				}
+
+				textarea {
+					font-size: 16px;
+					outline: none;
+					border-radius: 5px;
+				}
+			}
+
+			button {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 100px;
+				align-self: flex-end;
+				border: none;
+				padding: 10px;
+				background-color: crimson;
+				color: white;
+				cursor: pointer;
+				border-radius: 5px;
+				margin: 10px 10px 0px 0px;
+				transition: all 0.5s ease-out;
+				overflow: hidden;
+				font-weight: bold;
+
+				&:hover {
+					transform: scale(1.1);
+				}
+
+				@include mobile {
+					margin-top: 1px;
+					padding: 8px;
+				}
+			}
+		}
+
+		.contactRight {
+			width: 50%;
+			display: flex;
+			flex-direction: column;
+			padding: 10px;
+
+			@include mobile {
+				width: 100%;
+				height: max-content;
+			}
+
+			.socialDiv {
+				display: flex;
+				align-items: center;
+				margin: 8px;
+
+				i {
+					margin-right: 10px;
+					font-size: 20px;
+					padding: 4px 0px;
+
+					@include mobile {
+						font-size: 16px;
+					}
+				}
+			}
+		}
+	}
+}

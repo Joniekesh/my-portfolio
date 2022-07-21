@@ -1,0 +1,100 @@
+@import "../../global.scss";
+
+.skills {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: crimson;
+	position: relative;
+
+	.container {
+		position: absolute;
+		top: 0;
+		right: 35%;
+		margin: 16px 0;
+
+		@include mobile579 {
+			right: 15%;
+		}
+
+		h1 {
+			color: white;
+
+			@include mobile579 {
+				font-size: 21px;
+			}
+		}
+
+		.line {
+			display: flex;
+			align-items: flex-start;
+			height: 8px;
+			width: 35px;
+			background-color: $mainColor;
+			font-weight: bold;
+			border-radius: 60px;
+		}
+	}
+
+	.arrow {
+		position: absolute;
+		font-size: 40px;
+		color: white;
+		cursor: pointer;
+		color: $mainColor;
+
+		&.left {
+			left: 100px;
+			z-index: 2;
+
+			@include mobile {
+				left: 16px;
+			}
+		}
+
+		&.right {
+			right: 100px;
+
+			@include mobile {
+				right: 16px;
+			}
+		}
+	}
+
+	p {
+		font-size: 22px;
+		width: 80%;
+		margin-bottom: 20px;
+	}
+
+	.slider {
+		display: flex;
+		height: 350px;
+		position: absolute;
+		left: 0;
+		transition: all 2s ease;
+
+		.slide {
+			width: 100vw;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			img {
+				width: 50%;
+				height: 100%;
+				border-radius: 20px;
+				background-color: white;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				@include mobile {
+					width: 80%;
+					height: 90%;
+				}
+			}
+		}
+	}
+}
