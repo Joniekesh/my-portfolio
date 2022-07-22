@@ -39,7 +39,6 @@ const Contact = () => {
 								type="text"
 								placeholder="Enter your name"
 								name="user_name"
-								required
 							/>
 						</div>
 						<div className="formGroup">
@@ -53,12 +52,7 @@ const Contact = () => {
 						</div>
 						<div className="formGroup">
 							<label>Subject</label>
-							<input
-								type="text"
-								placeholder="Subject"
-								name="user_subject"
-								required
-							/>
+							<input type="text" placeholder="Subject" name="user_subject" />
 						</div>
 						<div className="formGroup">
 							<label>Message</label>

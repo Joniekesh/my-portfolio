@@ -81,6 +81,7 @@
 			}
 			h2 {
 				font-size: 35px;
+				color: $mainColor;
 
 				@include mobile {
 					font-size: 28px;

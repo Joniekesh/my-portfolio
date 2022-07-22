@@ -60,4 +60,8 @@ export const data = [
 		id: 15,
 		img: "/assets/gitlogo.png",
 	},
+	{
+		id: 16,
+		img: "/assets/contextAPIlogo.png",
+	},
 ];

@@ -29,6 +29,10 @@
 				text-decoration: none;
 				margin-right: 30px;
 				font-weight: 700;
+
+				@include mobile {
+					font-size: 32px;
+				}
 			}
 
 			.itemsContainer {
