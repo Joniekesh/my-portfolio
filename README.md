@@ -1,3 +1,10 @@
+## My Portfolio
+
+## URL: https://joniedev.netlify.app
+
+![Screenshot_20220823-160740](https://user-images.githubusercontent.com/73966666/186194638-1fcd6647-bf27-442e-8e75-43eb3ac4469f.jpg)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
