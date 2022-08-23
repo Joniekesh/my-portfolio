@@ -4,6 +4,8 @@
 
 ![Screenshot_20220823-160740](https://user-images.githubusercontent.com/73966666/186194638-1fcd6647-bf27-442e-8e75-43eb3ac4469f.jpg)
 
+![Screenshot_20220823-161230](https://user-images.githubusercontent.com/73966666/186195640-69c9fec1-b5de-46a8-975e-27eadd2223f8.jpg)
+
 
 # Getting Started with Create React App
 
